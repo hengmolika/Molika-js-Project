@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/app.js" defer></script>
+   
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <header>
+        <div id="page-banner">
+          <h2 class="title">Visit of Countries</h2>
+          <form action="" id="search-countries">
+            <input type="text" placeholder="Search Country..." />
+          </form>
+        </div>
+      </header>
+      <div class="card-container">
+        <h3>List of Countries</h3>
+        <button id="btn-create" style="width: 20%;border-radius: 40pt;margin-bottom: 15px;">+Add country</button>
+        <div class="card">
+          <div class="card-1">
+            <span class="name">Cambodia | SreyOn | 03.02.2021 | car | Female | juon@123.com</span>
+          </div>
+          <div class="card-2">
+            <span class="edit">edit</span>
+            <span class="delete" >x</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-1">
+            <span class="name">Korean | Molika | 03.02.2021 | car | Female | juon@123.com</span>
+          </div>
+          <div class="card-2">
+            <span class="edit">edit</span>
+            <span class="delete">x</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <form id="form">
+        <h4>Form information</h4>
+        <label for="username">Username:</label>
+        </br>
+        <input type="text" id="username" ><br/><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br/><br>
+        <label for="text">Gender:</label>
+        <div class="genders">
+          <input type="radio" name="genderSelect" id="maleRadio" checked value="Male"/>Male
+          <input type="radio" name="genderSelect" id="femaleRadio" value="Female"/>Female<br>
+        </div>
+        <br>
+        <label for="date" >Date to visit:</label>
+        </br>
+        <input type="date" name="time" id="date"></br>
+        <br>
+        <label for="choose">Choose your transportation:</label><br>
+        <select name="drivel" id="drivel">
+          <option value="Airplane">Airplane</option>
+          <option value="Car">Car</option>
+          <option value="Motobike" >Motorbike</option><br>
+          <option value="Bike">Bike</option>
+        </select></br>
+        <br>
+        <label for="countru">Choose your country that you want to visit:</label><br>
+        <select name="country" id="country">
+          <option value="Cambodia">Cambodia</option>
+          <option value="Thai">Thailand</option>
+          <option value="Korean">Korean</option>
+          <option value="France">France</option>
+          <option value="Chaina">Chaina</option>
+          <option value="Newzealand">Newzealand</option>
+          <option value="Singapore">Singapore</option>
+        </select></br><br>
+        <label for="message">Message:</label>
+        </br>
+        <textarea name="message" id="sms" cols="40" rows="5"></textarea><br />
+        <button id="applyButton" type="button" style="background:rgb(7, 130, 179);padding: 10px;border-style: none;color:azure;">Submit data</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
